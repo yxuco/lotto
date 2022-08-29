@@ -10,4 +10,19 @@ Using the classic lotto game of choosing 6 out of 49 balls, how many tickets wou
 
 A brute force search in sequence of 1 through 49 will result in 8,563 tickets.  However, this number is not the minimal number required.
 
-This Rust code proves that a search using random sequences can find a collection of less number tickets that is also enough to guarantee a match of 4 numbers every week.  One of the runs of this code produced a list of 6,681 tickets, although the result of multiple runs will produce different numbers, and I guess that there may be better algorithms that can beat the random search.
+This Rust code proves that a search using random sequences can find a collection of less number tickets that is also enough to guarantee a match of 4 numbers every week.  One of the runs of this code produced a list of 6,669 tickets, although the result of multiple runs will produce different numbers, and I guess that there may be better algorithms that can beat the random search.
+
+## Compile and run the code
+
+Install rust if it is not already done:
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Clone this project and then execute the random search:
+
+```
+cd lotto
+cargo run
+```
